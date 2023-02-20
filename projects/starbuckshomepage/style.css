@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    height: 5rem;
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans', sans-serif;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.navbar-left{
+    width: 40%;
+    height: 5rem;
+    padding: 10px;
+    display: flex;
+}
+.navbar .navbar-left a img{
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.navbar .navbar-left a:hover{
+    transform: translateY(15px);
+    transition: 0.6s;
+}
+.navbar-left-links{
+    list-style-type: none;
+    display: flex;
+}
+.navbar-left-links li{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.navbar-left-links li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.navbar-right {
+    width: 35%;
+    height: 5rem;
+    padding: 10px;
+}
+.navbar-right-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+.navbar-right-links li {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-right-links li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.navbar-right-links:first-child::before{
+    content: url('images/map.png');
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.navbar-right-links-deco{
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #183A1D;
+}
+.navbar-right-links-deco:hover{
+    background-color: black;
+    transition: 0.6s;
+}
+.navbar-right-links-deco2 {
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar-right-links-deco3 {
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-page{
+    width: 100%;
+    height: 3000px;
+    position: relative;
+    top: 80px;
+}
+.section-left{
+    width: 40%;
+    height: 100vh;
+    background-color: #191919;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+.section-left img{
+    width: 350px;
+    margin-bottom: 30px;
+}
+.section-left h1{
+    color: whitesmoke;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
+}
+.section-left h1::after{
+    content: url('images/cup.png');
+    margin-left: 25px;
+}
+.section-right {
+    width: 60%;
+    height: 2500px;
+    background-color: #0F0E0E;
+    position: absolute;
+    right: 0;
+    padding: 50px;
+    color: whitesmoke;
+    font-family: 'Noto Sans', sans-serif;
+}
+#right-image1{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.section-right-content{
+    width: 100%;
+    height: 250px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 80px;
+    margin-bottom: 25px;
+}
+.section-right-content a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+}
+.section-right-content2{
+    width: 100%;
+    height: 400px;
+    padding-right: 80px;
+    margin-bottom: 25px;
+}
+.section-right-content2 h5 img{
+    height: 400px;
+    width: 50%;
+    float: left;
+    margin-right: 50px;
+}
+.section-right-content2 h5{
+    margin-bottom: 40px;
+}
+.section-right-content2 a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+}
+.footer{
+    width: 60%;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #191919;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+.navbar-right-links2{
+    list-style-type: none;
+}
+.navbar-right-links2 li{
+    margin-bottom: 50px;
+}
+.navbar-right-links2 li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.navbar-right-links3{
+    display: flex;
+    list-style-type: none;
+}
+.navbar-right-links3 li i{
+    padding: 20px;
+}
