@@ -71,12 +71,13 @@ html{
     height: 90%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .about h1{
     font-size: 70px;
     color: whitesmoke;
     position: absolute;
-    top: 375px;
+    top: 350px;
 }
 .about a{
     color: whitesmoke;
