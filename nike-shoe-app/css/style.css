@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header{
+    background-color: #FEFBE9;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 8%;
+    margin-top: 1rem;
+}
+.navbar .navbar-logo a{
+    color: #678983;
+}
+.navbar .navbar-items ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar .navbar-items ul li a{
+    color: #678983;
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin: 2rem;
+    border-bottom: 3px transparent dotted;
+    transition: 0.7s ease;
+}
+.navbar .navbar-items ul li a:hover{
+    border-color: #678983;
+    padding-bottom: 0.5rem;
+}
+.search {
+    width: 35%;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 2.5rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 2.5rem;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .wrap{
+    width: 30%;
+  }
+  
+.main{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+.page-left{
+    width: 30%;
+    height: 80%;
+}
+.page-left video{
+    width: 90%;
+}
+.page-right{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.product-image:hover{
+    transform: scale(1.5);
+    transform: rotate(5deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.product-info{
+    text-align: center;
+}
+.product-info h1,p{
+    margin: 1rem;
+}
+.product-button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.product-button a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    margin: 0.5rem;
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+.product-button a:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.footer{
+    background-color: #FEFBE9;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
