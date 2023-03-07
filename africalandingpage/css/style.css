@@ -111,6 +111,74 @@ html {
   /* line 117, sass/style.scss */
   html .main {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #F7F1E5;
-    padding: 4rem; }
+    padding: 4rem 0; }
+    /* line 123, sass/style.scss */
+    html .main-content {
+      width: 40vw;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 4rem auto;
+      color: #191825;
+      font-size: 2rem; }
+    /* line 134, sass/style.scss */
+    html .main .border-bottom {
+      width: 80px;
+      height: 5px;
+      background-color: #191825;
+      margin: 4rem auto;
+      border-radius: 10px; }
+    /* line 141, sass/style.scss */
+    html .main-content2 {
+      width: 60%;
+      height: 400px;
+      display: flex;
+      text-align: center;
+      margin: 4rem auto;
+      color: #191825;
+      font-size: 1.6rem;
+      background-color: #FFEBB4;
+      border-radius: 15px;
+      box-shadow: -2px 8px 10px 0px rgba(0, 0, 0, 0.75); }
+      /* line 153, sass/style.scss */
+      html .main-content2-text {
+        width: 50%;
+        height: 100%;
+        padding: 3rem;
+        display: flex;
+        align-items: center; }
+      /* line 160, sass/style.scss */
+      html .main-content2-image {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      /* line 167, sass/style.scss */
+      html .main-content2 img {
+        height: 70%;
+        border-radius: 15px;
+        box-shadow: -2px 8px 10px 0px rgba(0, 0, 0, 0.75); }
+    /* line 173, sass/style.scss */
+    html .main-gallery {
+      width: 90%;
+      height: 300px;
+      margin: auto;
+      display: flex;
+      justify-content: space-around; }
+      /* line 180, sass/style.scss */
+      html .main-gallery img {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: -2px 8px 10px 0px rgba(0, 0, 0, 0.75);
+        transition: 0.5s;
+        object-fit: cover; }
+      /* line 188, sass/style.scss */
+      html .main-gallery :hover {
+        opacity: 0.9;
+        cursor: pointer; }
