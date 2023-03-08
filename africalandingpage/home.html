@@ -9,6 +9,7 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 </head>
 <body>
     <header class="header">
@@ -58,7 +59,7 @@
         <div class="main-content">
             <h1>KEŞFET</h1>
         </div>
-        <div class="main-gallery">
+        <div class="main-gallery owl-carousel owl-theme">
             <div class="gallery-item">
                 <img src="images/image3.jpg" alt="">
             </div>
@@ -75,6 +76,31 @@
                 <img src="images/image7.jpg" alt="">
             </div>
         </div>
+        <div class="main-content">
+            <h1>Güney Afrika’nın Karoo bölgesi , dinazor fosillerine ev sahipliği yapmaktadır. Bugüne kadar bulunan memelilere ait fosillerin yaklaşık % 80'inin Güney Afrika’daki Karoo bölgesinde bulunduğu tahmin edilmektedir.</h1>
+        </div>
     </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
 </body>
 </html>

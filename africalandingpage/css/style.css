@@ -178,7 +178,3 @@ html {
         box-shadow: -2px 8px 10px 0px rgba(0, 0, 0, 0.75);
         transition: 0.5s;
         object-fit: cover; }
-      /* line 188, sass/style.scss */
-      html .main-gallery :hover {
-        opacity: 0.9;
-        cursor: pointer; }
