@@ -1,0 +1,296 @@
+/* line 1, sass/input.scss */
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+/* line 5, sass/input.scss */
+html {
+  font-size: 10px; }
+
+/* line 8, sass/input.scss */
+body {
+  padding: 2rem; }
+
+/* line 11, sass/input.scss */
+.header {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  position: relative;
+  border-bottom: 2px solid black; }
+  /* line 24, sass/input.scss */
+  .header-logo img {
+    height: 50px; }
+  /* line 28, sass/input.scss */
+  .header-text {
+    left: 33%;
+    position: absolute; }
+    /* line 31, sass/input.scss */
+    .header-text h1 {
+      color: #2C3333;
+      font-weight: bold; }
+  /* line 37, sass/input.scss */
+  .header-search #text {
+    width: 14rem;
+    height: 4rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    border: none; }
+    /* line 45, sass/input.scss */
+    .header-search #text:hover {
+      width: 22rem; }
+  /* line 50, sass/input.scss */
+  .header-search button {
+    position: absolute;
+    right: 25px;
+    top: 21px; }
+
+/* line 57, sass/input.scss */
+.navbar {
+  width: 80%;
+  height: 5rem;
+  margin: auto;
+  background-color: #2C3333; }
+  /* line 62, sass/input.scss */
+  .navbar-links {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: start; }
+    /* line 69, sass/input.scss */
+    .navbar-links-item {
+      margin-right: 3rem; }
+      /* line 71, sass/input.scss */
+      .navbar-links-item a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold; }
+
+/* line 80, sass/input.scss */
+.top-gallery {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  background-color: gray;
+  padding: 1.5rem; }
+  /* line 86, sass/input.scss */
+  .top-gallery .main-gallery {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between; }
+    /* line 91, sass/input.scss */
+    .top-gallery .main-gallery .gallery-item {
+      height: 300px;
+      transition: 0.5s; }
+      /* line 94, sass/input.scss */
+      .top-gallery .main-gallery .gallery-item img {
+        height: 100%; }
+      /* line 97, sass/input.scss */
+      .top-gallery .main-gallery .gallery-item :hover {
+        opacity: 0.9;
+        cursor: pointer; }
+
+/* line 104, sass/input.scss */
+.main-page {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex; }
+  /* line 110, sass/input.scss */
+  .main-page .section-left {
+    width: 70%;
+    height: auto;
+    background-color: #2C3333;
+    padding: 2rem;
+    border-right: 2px solid black; }
+    /* line 116, sass/input.scss */
+    .main-page .section-left h1 {
+      color: white;
+      padding-left: 1rem;
+      border-left: 5px solid yellow; }
+    /* line 121, sass/input.scss */
+    .main-page .section-left .film-gallery {
+      padding: 2rem 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      /* line 126, sass/input.scss */
+      .main-page .section-left .film-gallery .gallery-item {
+        width: 19%;
+        height: 350px;
+        margin: 0.5rem 0.5rem;
+        transition: 0.5s;
+        border-radius: 0.5rem;
+        border: 2px solid white; }
+        /* line 133, sass/input.scss */
+        .main-page .section-left .film-gallery .gallery-item img {
+          width: 100%;
+          height: 85%;
+          object-fit: cover;
+          border-radius: 0.5rem; }
+        /* line 139, sass/input.scss */
+        .main-page .section-left .film-gallery .gallery-item h3 {
+          margin: 1rem;
+          color: white;
+          text-align: center; }
+        /* line 144, sass/input.scss */
+        .main-page .section-left .film-gallery .gallery-item :hover {
+          opacity: 0.9;
+          cursor: pointer;
+          color: gray; }
+    /* line 153, sass/input.scss */
+    .main-page .section-left .pagination .page-item a {
+      font-size: 2rem; }
+  /* line 159, sass/input.scss */
+  .main-page .section-right {
+    width: 30%;
+    height: auto;
+    background-color: #2C3333; }
+    /* line 164, sass/input.scss */
+    .main-page .section-right .section-1 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem; }
+      /* line 171, sass/input.scss */
+      .main-page .section-right .section-1 h3 {
+        border-left: 4px solid yellow;
+        padding-left: 1rem;
+        color: white; }
+      /* line 176, sass/input.scss */
+      .main-page .section-right .section-1-item {
+        width: auto;
+        height: auto;
+        display: flex;
+        margin-top: 1.5rem; }
+        /* line 181, sass/input.scss */
+        .main-page .section-right .section-1-item-left {
+          width: auto;
+          height: auto;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        /* line 189, sass/input.scss */
+        .main-page .section-right .section-1-item-right {
+          margin-left: 2rem;
+          width: 80%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          background-color: gray; }
+          /* line 196, sass/input.scss */
+          .main-page .section-right .section-1-item-right-img {
+            width: 40px;
+            height: auto; }
+            /* line 199, sass/input.scss */
+            .main-page .section-right .section-1-item-right-img img {
+              width: 100%; }
+          /* line 203, sass/input.scss */
+          .main-page .section-right .section-1-item-right-text {
+            margin: 0 1.5rem; }
+            /* line 205, sass/input.scss */
+            .main-page .section-right .section-1-item-right-text p {
+              margin: 0;
+              font-size: 1.7rem;
+              font-weight: bold; }
+    /* line 214, sass/input.scss */
+    .main-page .section-right .section-2 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem; }
+      /* line 221, sass/input.scss */
+      .main-page .section-right .section-2 h3 {
+        border-left: 4px solid yellow;
+        padding-left: 1rem;
+        color: white; }
+      /* line 226, sass/input.scss */
+      .main-page .section-right .section-2-item {
+        width: 90%;
+        height: 13rem;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between; }
+        /* line 232, sass/input.scss */
+        .main-page .section-right .section-2-item-left {
+          width: 25%;
+          height: auto; }
+          /* line 235, sass/input.scss */
+          .main-page .section-right .section-2-item-left img {
+            width: 100%; }
+        /* line 239, sass/input.scss */
+        .main-page .section-right .section-2-item-right {
+          width: 72%;
+          height: auto;
+          background-color: gray;
+          padding: 1rem; }
+          /* line 244, sass/input.scss */
+          .main-page .section-right .section-2-item-right-top {
+            display: flex;
+            height: auto;
+            align-items: center; }
+            /* line 248, sass/input.scss */
+            .main-page .section-right .section-2-item-right-top-info {
+              margin-left: 1rem; }
+          /* line 252, sass/input.scss */
+          .main-page .section-right .section-2-item-right-bottom {
+            margin-top: 1rem; }
+    /* line 258, sass/input.scss */
+    .main-page .section-right .section-3 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem; }
+      /* line 265, sass/input.scss */
+      .main-page .section-right .section-3 h3 {
+        border-left: 4px solid yellow;
+        padding-left: 1rem;
+        color: white; }
+      /* line 270, sass/input.scss */
+      .main-page .section-right .section-3 .links {
+        list-style-type: none;
+        padding: 2rem 0;
+        background-color: #2C3333; }
+        /* line 274, sass/input.scss */
+        .main-page .section-right .section-3 .links li {
+          margin: 2.5rem; }
+          /* line 276, sass/input.scss */
+          .main-page .section-right .section-3 .links li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            border: 1px solid gray;
+            background-color: gray;
+            border-radius: 1rem; }
+
+/* line 290, sass/input.scss */
+.footer {
+  width: 80%;
+  height: 8rem;
+  margin: auto;
+  display: flex;
+  background-color: gray;
+  justify-content: center; }
+  /* line 297, sass/input.scss */
+  .footer p {
+    align-self: center;
+    font-size: 1.5rem; }
