@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #7D7C7C;
+  color: #222;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: black;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #191717;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.4s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-bottom: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-right: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+nav ul li + li {
+  margin-left: 30px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 55px;
+  transform: translateX(-200%);
+}
+
+nav a{
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
+}
+
+nav a:hover {
+  color: #191717;
+  font-weight: bold;
+}
+.navbar{
+    width: 75%;
+    height: 80px;
+    margin:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-logo img{
+    width: 200px;
+    height: 100%;
+}
+.navbar-info{
+    width: auto;
+    cursor:pointer;
+    color: white;
+}
+.navbar-help {
+    width: auto;
+    padding-top: 15px;
+}
+.navbar-help a {
+  margin: 5px;
+  color: whitesmoke;
+}
+.main-page{
+  display: flex;
+  width: 70vw;
+  margin:70px auto;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 2 ;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.contact{
+  width: 50%;
+  height: 250px;
+  margin: auto;
+  background-color: gray;
+  display: flex;
+  color: whitesmoke;
+  border-radius: 20px;
+}
+.contact-image{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-image img{
+  height: 300px;
+}
+.contact-info{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+}
+.contact-info h1{
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid whitesmoke;
+}
+.contact-info a{
+  color: whitesmoke;
+  font-size: 20px;
+  text-decoration: none;
+}
+.contact-info a i{
+  margin-right: 5px;
+}
+.contact-info a:hover{
+  transition: 0.5s;
+  transform: translateX(10px);
+  color: antiquewhite;
+}
